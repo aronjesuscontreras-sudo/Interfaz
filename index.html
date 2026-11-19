@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz con Tailwind CSS - Taller de Diseño Web</title>
+    <!-- CDN de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 text-slate-800 min-h-screen flex flex-col justify-between font-sans">
+
+    <!-- Barra de navegación -->
+    <header class="bg-blue-900 text-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-wide">Portal Institucional</h1>
+            <nav class="space-x-4 text-sm font-medium">
+                <a href="#" class="hover:text-blue-300 transition">Inicio</a>
+                <a href="#" class="hover:text-blue-300 transition">Servicios</a>
+                <a href="#" class="bg-blue-600 hover:bg-blue-500 px-3 py-1.5 rounded-lg transition">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="max-w-6xl mx-auto px-4 py-12 flex-grow">
+        <div class="text-center mb-10">
+            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full uppercase">Práctica Tailwind CSS</span>
+            <h2 class="text-3xl font-extrabold text-slate-900 mt-3">Nuestros Módulos Académicos</h2>
+            <p class="text-slate-600 mt-2 max-w-xl mx-auto">Interfaz responsiva desarrollada aplicando utilidades de espaciado, rejilla y tipografía con Tailwind CSS.</p>
+        </div>
+
+        <!-- Grid de Tarjetas (Cards) -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- Tarjeta 1 -->
+            <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center font-bold text-xl mb-4">
+                    01
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Gestión Estudiantil</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                    Consulta de horarios, calificaciones y seguimiento académico en tiempo real desde cualquier dispositivo.
+                </p>
+                <a href="#" class="text-blue-700 font-semibold text-sm hover:underline">Ver detalles →</a>
+            </article>
+
+            <!-- Tarjeta 2 -->
+            <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-lg flex items-center justify-center font-bold text-xl mb-4">
+                    02
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Mesa de Partes Virtual</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                    Envío y seguimiento de trámites administrativos de forma rápida, ordenada y completamente digital.
+                </p>
+                <a href="#" class="text-emerald-700 font-semibold text-sm hover:underline">Ingresar →</a>
+            </article>
+
+            <!-- Tarjeta 3 -->
+            <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-lg flex items-center justify-center font-bold text-xl mb-4">
+                    03
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Soporte Técnico</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                    Asistencia directa para accesos institucionales, correo electrónico y plataformas virtuales.
+                </p>
+                <a href="#" class="text-amber-700 font-semibold text-sm hover:underline">Contactar →</a>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-slate-800 text-slate-300 text-center py-4 text-sm">
+    </footer>
+
+</body>
+</html>
